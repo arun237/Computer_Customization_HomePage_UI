@@ -3,7 +3,6 @@ import 'package:computer_customization_homepage_ui/components/app_bar.dart';
 import 'package:computer_customization_homepage_ui/components/desktop.dart';
 import 'package:computer_customization_homepage_ui/components/laptop.dart';
 import 'package:flutter/material.dart';
-import 'package:computer_customization_homepage_ui/components/onhover.dart';
 
 class Users extends StatefulWidget {
   Users({Key key}) : super(key: key);
@@ -13,8 +12,6 @@ class Users extends StatefulWidget {
 }
 
 class _UsersState extends State<Users> {
-  TextEditingController _search = new TextEditingController();
-
   Color myHexColor = Color(0xff123456);
   int i = 1;
   double _opacity1 = 0;

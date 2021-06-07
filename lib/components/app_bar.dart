@@ -1,6 +1,5 @@
 // @dart=2.9
 import 'package:flutter/material.dart';
-import 'package:computer_customization_homepage_ui/components/onhover.dart';
 
 class Custom extends StatefulWidget {
   Custom({Key key}) : super(key: key);
@@ -21,7 +20,9 @@ class _CustomState extends State<Custom> {
       height: 60.0,
       // color: Colors.black,
       child: Padding(
-        padding: const EdgeInsets.all(10.0),
+        padding: const EdgeInsets.symmetric(
+          vertical: 10,
+        ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
@@ -33,9 +34,7 @@ class _CustomState extends State<Custom> {
                   fontWeight: FontWeight.w600,
                   color: Colors.orange),
             ),
-            SizedBox(
-              width: 5,
-            ),
+
             InkWell(
               onTap: () {},
               child: Container(
@@ -71,7 +70,7 @@ class _CustomState extends State<Custom> {
                     ],
                   ),
                 ),
-              ).showOnHover.moveUp,
+              ),
             ),
             SizedBox(width: 5.0),
 
@@ -113,7 +112,7 @@ class _CustomState extends State<Custom> {
                 ),
               ),
             ),
-            SizedBox(width: 5.0),
+
             InkWell(
               onTap: () {},
               child: Container(
@@ -135,7 +134,7 @@ class _CustomState extends State<Custom> {
                       color: Colors.grey,
                     )
                   ],
-                ).showOnHover.moveUp,
+                ),
               ),
             ),
             InkWell(
@@ -166,7 +165,7 @@ class _CustomState extends State<Custom> {
                     ),
                   ),
                 ],
-              ).showOnHover.moveUp,
+              ),
             ),
 
             // SearchBar(),
