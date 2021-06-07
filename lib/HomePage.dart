@@ -23,8 +23,6 @@ class _UsersState extends State<Users> {
     return Scaffold(
       backgroundColor: i == 1 ? Colors.black : Colors.indigo[900],
       body: Container(
-        height: size.height,
-        width: size.width,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
@@ -39,7 +37,7 @@ class _UsersState extends State<Users> {
               width: size.width,
             ),
             Container(
-              height: a,
+              height: a - 10,
               width: size.width,
               child: Stack(
                 fit: StackFit.loose,
@@ -71,6 +69,7 @@ class _UsersState extends State<Users> {
                   ),
                   Positioned(
                     top: 200.0,
+                    left: 0,
                     child: Container(
                       width: size.width,
                       child: Row(
